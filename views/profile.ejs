@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+     <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #020c15;
+        }
+        label{
+            font-weight: bold;
+        }
+     </style>
+
+</head>
+<body class="bg-black text-light">
+    <div class="container m-5 p-4 text-center" >
+
+        
+        <div style="text-align: center;">
+        <h1 class="text-center" style="font-size: 50px;">Welcome to <span style="color:rgb(197, 115, 14)"><%= user.name %></span></h1>
+        <h2 class=" mt-4" style="font-size: 20px;">Your email address is: <span style="color:rgb(140, 52, 146);font-size: 18px;"><%= user.email %></span></h2>
+        </div>
+        <div class="my-5">
+            <img src="<%= user.url %>" alt="Profile Image" class="img-fluid rounded-circle" style="width: 150px; height: 140px; border-radius: 100%; border-width: 2px;
+            border-color: rgb(96, 225, 71); border-style: solid;">
+
+        </div>
+        
+       <div class="my-5">
+        <a href="/" class="btn btn-danger mx-3">Log Out</a>
+       </div>
+        
+    </div>
+     
+
+</body>
+</html>
