@@ -15,9 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 
 // dependency for cloudinary
 cloudinary.config({ 
-  cloud_name: 'dh6pg1m91', 
-  api_key: '116452578746385', 
-  api_secret: 'vUDoEF_sEwemm492GMhAYm383fc'
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
+  api_key: process.env.CLOUDINARY_API_KEY, 
+  api_secret: process.env.CLOUDINARY_API_SECRET
 });
 // mongoose connection
 
